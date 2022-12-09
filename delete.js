@@ -51,4 +51,16 @@ async function main() {
         fs.writeFileSync("data.json", JSON.stringify(r));
     });
 }
-main();
+// main();
+try {
+    app.listen(port, () => {
+        console.log("server listening on " + `http://localhost${port}`);
+    });
+    app.delete('/', function (req, res) {
+        res.send('Got a DELETE request at /')
+    })
+
+}
+catch (err) {
+    console.log("Error: " + err.message);
+}

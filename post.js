@@ -18,7 +18,7 @@ async function main() {
         ],
     });
     app.listen(port, () => {
-        console.log("server listening on " + port);
+        console.log("server listening on " + `http://localhost:9000`);
     });
 
     app.post("/", (req, res) => {
