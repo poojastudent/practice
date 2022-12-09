@@ -22,7 +22,7 @@ async function main() {
         console.log("server listening on " + port);
     });
 
-    app.post("/", (req, res) => {
+    app.post("/new", (req, res) => {
         var d = req.body;
         fs.writeFileSync("data.json", JSON.stringify(d));
         res.send("data.json");
