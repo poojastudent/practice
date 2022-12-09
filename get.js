@@ -5,5 +5,5 @@ app.get('/', (req, res) => {
     res.send("data for reading")
 })
 app.listen(port, () => {
-    console.log('listening on port http://localhost3000')
+    console.log('listening on port http://localhost:3000')
 })
